@@ -1,0 +1,92 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/meyer-reset.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Mark Schwass | Home</title>
+</head>
+<body>
+    <header class="navheader">
+        <nav class="relative sticky px-4 py-4 flex justify-center items-center drop-shadow-lg">
+            <!-- Centered Logo-->
+            <a class="flex items-center" href="#">
+                <img class="h-12" src="./assets/img/logo.png" alt="logo">
+            </a>
+            <div class="navbar">
+                <ul class=" flex items-center space-x-6">
+                    <li><a class="navbtn" href="home.html">Home</a></li>
+                    <li><a class="navbtn" href="contact.html">Contact</a></li>
+                    <li><a class="navbtn" href="about.html">About</a></li>
+                    <li><a class="navbtn" href="resume.html">Resumé</a></li>
+                    <li><a class="navbtn" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="hamburgermenu" onclick="toggleDropdown()">
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resumé</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+    <script src="./assets/js/hamburgermenu.js"></script>
+
+<main>
+    <div class="contact-container">
+        <div class="contact-item-header">
+            <h2>CONTACT ME</h2>
+            <p>Need to contact me? Use one of the two methods provided here and I will try to get back as soon as I can!</p>
+        </div>
+        <div class="contact-item">
+            <img class="contact-img" src="./assets/img/phone_icon.png">
+            <h2 class="home-container-h2">ABOUT</h2>
+            <p>Learn all about me - my story, interests, and unique qualities. I'm not just a collection of skills!</p>
+        </div>
+        <div class="contact-item">
+            <img class="contact-img" src="./assets/img/email-round-icon.png">
+            <h2>CONTACT</h2>
+            <p>Let's get in touch! Reach out via email or social media.</p>
+        </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <!-- Logo on the Right -->
+        <a class="footer-logo">
+            <img src="./assets/img/logo.png" alt="logo">
+        </a>
+        <!-- Social Medias in the Middle -->
+        <div class="footer-socials">
+            <!--Facebook-->
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="h-8" src="./assets/img/facebook.png" alt="Facebook">
+            </a>
+            <!--Instagram-->
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="h-8" src="./assets/img/instagram.png" alt="Instagram">
+            </a>
+            <!--LinkedIn-->
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img class="h-8" src="./assets/img/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+        <!-- Placeholder Text on the Left -->
+        <div class="footer-copyright">
+            <p>© Copyright 2023.</p>
+        </div>
+        
+    </div>
+</footer>
+</body>
+</html>

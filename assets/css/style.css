@@ -84,7 +84,8 @@ nav {
 	padding: 5px 10px;
 
   }
-
+  
+	/* Home Page Container */
   .home-container > div {
 	background-color: #f2e9e4;
 	text-align: center;
@@ -96,7 +97,6 @@ nav {
 
   }
 
-  
   .home-item > a > p {
 	font-size: 15;
   }
@@ -114,6 +114,50 @@ nav {
 	grid-column: 1/3;
 	width: 100%;
 	z-index: 50;
+  }
+
+  /* Contact Page Container */
+  .contact-container > div {
+	background-color: #f2e9e4;
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	z-index: 1;
+
+  }  
+  .contact-item > p {
+	font-size: 15;
+  }
+
+  .contact-item > h2 {
+	color: #333;
+  }
+
+  .contact-container-h2 {
+	text-align: center;
+	width: 100%;
+  }
+  
+  .contact-item-header {
+	grid-row: 1/3;
+	width: 100%;
+	z-index: 50;
+	padding: 20;
+  }
+
+  .contact-item-header > p{
+	font-size: 20;
+  }
+
+  .contact-img {
+	max-width: 60px;
+	min-width: 50px;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
   }
 
 footer {
@@ -139,7 +183,7 @@ footer {
 .footer-socials {
 	display: flex;
     gap: 30px;
-    align-items: center; /* Center vertically */
+    align-items: center;
     position: absolute;
     transform: translateX(-50%);
 }
@@ -165,7 +209,7 @@ footer {
 
 	.hamburgermenu {
 		position: fixed;
-		padding: 10px; /* Adjust as needed */ /* Background color for the menu */
+		padding: 10px;
 		right: 30px;
 		z-index: 1000;
 	}
@@ -175,7 +219,6 @@ footer {
 		top: 0;
 		height: 430px;
 		width: 100%;
-		/* Adjust as needed */
 		right: 0;
 		background-color: #fff;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -192,29 +235,28 @@ footer {
 	}
 	
 	.dropdown-menu li {
-		/* Adjusted padding values */
 		padding-top: 30px;
 		padding-bottom: 30px;
-		transition: background-color 0.3s; /* Added transition property */
+		transition: background-color 0.3s;
 		
 		border-top: 2px solid #EEEEEE;
 	}
 	
 	.dropdown-menu li:hover {
-		background-color: #c9ada7; /* Adjust as needed */
+		background-color: #c9ada7;
 	}
 	
 	.dropdown-menu a {
 		color: #333;
 		text-decoration: none;
 		border-width: 0px;
-		transition: color 0.3s; /* Added transition property */
+		transition: color 0.3s;
 	}
 	
 	.dropdown-menu a:hover {
-		color: #c9ada7; /* Adjust as needed */
+		color: #c9ada7;
 	}
-	
+	/* Home Page Container */
 	.home-container {
 		display: grid;
 		gap: 20px;
@@ -230,6 +272,29 @@ footer {
 		grid-column: 1/3;
 		border-radius: 10px;
 		height: 150px;
+		width: 100%;
+	  }
+
+	/* Contact Page Container */
+	.contact-container {
+		display: grid;
+		gap: 20px;
+		padding: 20px;
+		position: relative;
+		justify-items: center;
+		align-items: center;
+		width: 100%;
+		height: 90%;
+	  }
+	  
+	  .contact-item {
+		border-radius: 10px;
+		width: 100%;
+		padding: 20px;
+	  }
+
+	  .contact-item-header {
+		border-radius: 10px;
 		width: 100%;
 	  }
 	
@@ -277,6 +342,7 @@ footer {
 		padding: 0px;
 	  }
 
+	/* Home Page Container */
 	  .home-container {
 		display: grid;
 		gap: 50px;
@@ -292,5 +358,45 @@ footer {
 	  .home-item {
 		border-radius: 10px;
 		height: 200px;
+	  }
+
+	/* Contact Page Container */
+	.contact-container {
+		display: grid;
+		gap: 50px;
+		padding: 20px;
+		grid-template-columns: auto auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+		vertical-align: middle;
+		justify-content: center;
+		justify-content: center;
+  		align-items: center;
+	  }
+	
+	  .contact-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 400px;
+		border-radius: 10px;
+		min-height: 250px;
+	  }
+
+	  .contact-item-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		height: 100%;
+	  }
+
+	  .contact-img {
+		padding-bottom: 20px;
 	  }
 }
