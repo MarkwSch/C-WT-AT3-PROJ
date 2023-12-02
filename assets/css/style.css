@@ -162,7 +162,7 @@ nav {
 
 
 
-  /* project Page Container */
+  /* Project Page Container */
   .project-container > div {
 	background-color: #f2e9e4;
 	text-align: center;
@@ -456,7 +456,8 @@ footer {
 		justify-items: center;
 		align-items: center;
 		width: 100%;
-		height: 90%;
+		min-height: 1300px;
+		z-index: 0;
 	  }
 	  
 	  .project-item {
@@ -497,7 +498,7 @@ footer {
 		justify-items: center;
 		align-items: center;
 		width: 100%;
-		height: 90%;
+		min-height: 1300px;
 		z-index: 0;
 	  }
 	  
@@ -530,6 +531,7 @@ footer {
 		gap: 20px;
 		width: 100%;
 		padding-bottom: 100px;
+		height: 300px;
 	}
 
 	.resume-inside-item {
@@ -550,6 +552,66 @@ footer {
 		height: 100%;
 	  }
 
+
+	.project-sample-container {
+		display: grid;
+		grid-template-columns: auto;
+		width: 100%;
+		padding: 20px;
+		z-index: 0;
+	  }
+
+	  .project-sample-container > div {
+		background-color: #f2e9e4;
+		text-align: center;
+		padding: 20px;
+		font-size: 30px;
+		; /* Optional: Add border radius for rounded corners */
+		z-index: 1;
+		border: 1px solid #000; 
+	  }
+
+	  .project-sample-item-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 100%;
+		height: 100%;
+	  }
+
+	  .project-sample-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 100%;
+		height: 100%;
+	  }
+
+	  .project-sample-item1 {
+		display: flex;
+		grid-row: 6;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 100%;
+		height: 100%;
+	  }
+
+	  .project-sample-item h2{
+		font-size: 28px;
+	  }
+
+	  .project-sample-item p{
+		font-size: 15px;
+	  }
+
+	  .project-sample-img {
+		width: 100px;
+	  }
+
+
 	.footer-socials {
 		gap: 15px;
 	}
@@ -568,7 +630,10 @@ footer {
 		align-items: center;
 	}
 
-	
+	footer {
+		position: relative;
+		bottom: 0px;
+	}	
 }
 
   /* Media Query for Desktop */
@@ -577,8 +642,15 @@ footer {
 	main {
 		width: 70%;
 		margin: auto;
-		height: 90%;
+		height: 650px;
 	  }
+
+	.main-extended {
+		width: 70%;
+		margin: auto;
+		min-height: 1300px;
+		max-height: 1500px;
+	}
 
 	.dropdown-menu {
 		display: none;
@@ -773,5 +845,64 @@ footer {
 
 	  .project-img {
 		padding-bottom: 20px;
+	  }
+
+
+	/*Project Sample*/
+	  .project-sample-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 70%;
+		vertical-align: middle;
+		justify-content: center;
+		justify-content: center;
+  		align-items: center;
+		border: 2px solid #000; /* Add a 2px solid black border */
+		border-radius: 10px
+	  }
+
+	  .project-sample-container > div {
+		background-color: #f2e9e4;
+		text-align: center;
+		padding: 20px;
+		font-size: 30px;
+		; /* Optional: Add border radius for rounded corners */
+		z-index: 1;
+		border: 1px solid #000; 
+	  }
+
+	  .project-sample-item-image {
+		display: flex;
+		grid-row: 1 / span 2;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 400px;
+		height: 100%;
+	  }
+
+	  .project-sample-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-width: 400px;
+		height: 100%;
+	  }
+
+	  .project-sample-item h2{
+		font-size: 28px;
+	  }
+
+	  .project-sample-item p{
+		font-size: 15px;
+	  }
+
+	  .project-sample-img {
+		width: 100px;
 	  }
   }
