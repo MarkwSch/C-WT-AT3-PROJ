@@ -277,7 +277,6 @@ nav {
 	grid-column: 1/3;
 	width: 100%;
 	z-index: 50;
-	padding: 20;
   }
 
   .resume-item-header > p{
@@ -287,6 +286,15 @@ nav {
   .resume-img {
 	max-width: 60px;
 	min-width: 50px;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  }
+
+  .resume-img-item1 {
+	max-width: 50px;
+	min-width: 30px;
 	max-height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -322,6 +330,11 @@ footer {
     bottom: 0px;
 	padding: 20; 
   }
+
+.footer-resume {
+	position: relative;
+}
+
 .footer-logo {
 	position: absolute;
 	left: 2%;
@@ -522,7 +535,7 @@ footer {
 	  }
 
 	  .resume-img {
-		max-width: 30px;
+		max-width: 50px;
 		min-width: 20px;
 		display: block;
 	  }
@@ -546,9 +559,11 @@ footer {
 		display: grid;
 		gap: 50px;
 		padding: 20px;
-		grid-template-columns: auto;
+		grid-template-columns: auto auto;
 		gap: 20px;
 		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
 	}
 
 	.resume-inside-item {
@@ -775,15 +790,15 @@ footer {
 	  /* Resume Page Container */
 	.resume-container {
 		display: grid;
-		gap: 50px;
-		padding: 20px;
+		gap: 20px;
+		padding: 30px;
 		grid-template-columns: auto auto;
-		position: absolute;
-		top: calc(50% + 75px);
+		position: relative;
+		top: 350px;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 70%;
-		height: 90%;
+		height: 100%;
 		vertical-align: middle;
 		justify-content: center;
 		justify-content: center;
@@ -792,18 +807,17 @@ footer {
 
 	.resume-inside-container {
 		display: grid;
-		gap: 50px;
 		padding: 20px;
 		grid-template-columns: auto auto;
-		gap: 20px;
 	}
 
 	.resume-inside-languages {
 		display: grid;
-		gap: 50px;
 		padding: 20px;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto auto auto auto;
 		margin-bottom: 50px;
+		grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
 	}
 
 	.resume-inside-languages-item {
@@ -828,7 +842,6 @@ footer {
 		justify-content: center;
 		align-items: center;
 		border-radius: 10px;
-		height: 100%;
 	}
 
 	.stacked-text > h2 {
@@ -838,6 +851,11 @@ footer {
 	.stacked-text > p {
 		font-size: 10;
 	  }
+
+	.resume-inside-languages-item1 {
+		display: inline-flex;
+		flex-direction: column;
+	}
 
 	/* Project Page Container */
 	.project-container {
