@@ -360,7 +360,6 @@ footer {
 
   /* Media Query for Mobile */
 @media screen and (max-width: 768px) {
-	/* Hides the navigation and asides in the mobile view */
 	nav, aside {
 		display: none;
 	}
@@ -600,7 +599,6 @@ footer {
 		text-align: center;
 		padding: 20px;
 		font-size: 30px;
-		; /* Optional: Add border radius for rounded corners */
 		z-index: 1;
 		border: 1px solid #000; 
 	  }
@@ -911,7 +909,7 @@ footer {
 		justify-content: center;
 		justify-content: center;
   		align-items: center;
-		border: 2px solid #000; /* Add a 2px solid black border */
+		border: 2px solid #000;
 		border-radius: 10px
 	  }
 
@@ -920,7 +918,6 @@ footer {
 		text-align: center;
 		padding: 20px;
 		font-size: 30px;
-		; /* Optional: Add border radius for rounded corners */
 		z-index: 1;
 		border: 1px solid #000; 
 	  }
