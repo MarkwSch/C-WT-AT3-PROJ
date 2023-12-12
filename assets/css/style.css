@@ -86,7 +86,7 @@ nav {
   }
   
 	/* Home Page Container */
-  .home-container > div {
+  .home-container > section {
 	background-color: #f2e9e4;
 	text-align: center;
 	padding: 20px;
@@ -117,7 +117,7 @@ nav {
   }
 
   /* Contact Page Container */
-  .contact-container > div {
+  .contact-container > section {
 	background-color: #f2e9e4;
 	text-align: center;
 	padding: 20px;
@@ -163,7 +163,7 @@ nav {
 
 
   /* Project Page Container */
-  .project-container > div {
+  .project-container > section {
 	background-color: #f2e9e4;
 	text-align: center;
 	padding: 20px;
@@ -205,7 +205,7 @@ nav {
   }
 
   /* About Page Container */
-  .about-container > div {
+  .about-container > section {
 	background-color: #f2e9e4;
 	text-align: center;
 	padding: 20px;
@@ -250,7 +250,7 @@ nav {
 
 
   /* Resume Page Container */
-  .resume-container > div {
+  .resume-container > section {
 	background-color: #f2e9e4;
 	text-align: center;
 	padding: 20px;
@@ -520,7 +520,7 @@ footer {
 		padding: 20px;
 	  }
 
-	  .resume-item > div > h2{
+	  .resume-item > section > h2{
 		font-size: 15;
 	  }
 
@@ -594,7 +594,7 @@ footer {
 		z-index: 0;
 	  }
 
-	  .project-sample-container > div {
+	  .project-sample-container > section {
 		background-color: #f2e9e4;
 		text-align: center;
 		padding: 20px;
@@ -913,7 +913,7 @@ footer {
 		border-radius: 10px
 	  }
 
-	  .project-sample-container > div {
+	  .project-sample-container > section {
 		background-color: #f2e9e4;
 		text-align: center;
 		padding: 20px;
