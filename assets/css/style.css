@@ -359,7 +359,7 @@ footer {
 }
 
   /* Media Query for Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
 	nav, aside {
 		display: none;
 	}
@@ -669,7 +669,7 @@ footer {
 }
 
   /* Media Query for Desktop */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 812px) {
 
 	main {
 		width: 70%;
@@ -685,6 +685,10 @@ footer {
 	}
 
 	.dropdown-menu {
+		display: none;
+	}
+
+	.dropdown-menu > ul > li {
 		display: none;
 	}
 
